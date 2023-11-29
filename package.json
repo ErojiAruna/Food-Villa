@@ -1,0 +1,30 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "This is namaste react by Aruna",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErojiAruna/Food-Villa.git"
+  },
+  "keywords": [],
+  "author": "Aruna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErojiAruna/Food-Villa/issues"
+  },
+  "homepage": "https://github.com/ErojiAruna/Food-Villa#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
