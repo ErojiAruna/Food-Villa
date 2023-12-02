@@ -29,8 +29,8 @@
 - - Search
 - - RestaurantContainer
 - - RestaurantCard
-- -Img
-- -Name of Res, Star Rating, cuisine, delery tie
+- -`Img`
+- -`Name of Res, Star Rating, cuisine, delery tie`
 - Footer
 - - Copyright
 - - Links
