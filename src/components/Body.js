@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import RestaurantCard from './RestaurantCard';
 import Shimmer from './Shimmer';
+import { Link } from 'react-router-dom';
 
 const Body = () => {
   // Local State Variable - Super powerfull variable
@@ -48,7 +49,9 @@ const Body = () => {
               // Filter the restaurant cards and update the UI
               // searchText
               const filteredRestaurant = listOfRestaurants?.filter((res) =>
-                res.data.name.toLowerCase().includes(searchText.toLowerCase())
+                res?.data?.name
+                  ?.toLowerCase()
+                  ?.includes(searchText.toLowerCase())
               );
               setListOfRestaurants(filteredRestaurant);
             }}
@@ -70,7 +73,12 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filteredRestaurant?.map((restaurant) => (
-          <RestaurantCard key={restaurant?.info?.id} resData={restaurant} />
+          <Link
+            key={restaurant?.info?.id}
+            to={'/restaurants/' + restaurant?.info?.id}
+          >
+            <RestaurantCard resData={restaurant} />
+          </Link>
         ))}
       </div>
     </div>

@@ -43,3 +43,15 @@ Two types of Export/Import
   - export default Component; import Component from"path";
 - Named Export/Import
   - export const Component; import {Component} from "path";
+
+# React Hooks
+
+(Normal JS utility functions)
+
+- useState() - Superpowerful State Variables in react
+- useEffect()
+
+# 2 types of Routing in web apps
+
+- Client Side Routing
+- Server Side Routing
